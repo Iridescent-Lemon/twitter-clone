@@ -1,5 +1,5 @@
 
-const form = document.querySelector('form');
+const form = document.querySelector('.mew-form');
 const loadElement = document.querySelector('.loading');
 const mewsElement = document.querySelector('.mews');
 const loadMoreElement = document.querySelector('#loadMore');
@@ -36,7 +36,7 @@ listAllMews();// <-- then list all mews
 form.addEventListener('submit', (event)=>{
 	event.preventDefault();
 	//get the form req.body data
-	const formData = new FormData(this);
+	const formData = new FormData(form);
 	const name = formData.get('name');
 	const content = formData.get('content');
 	
@@ -94,7 +94,6 @@ function listAllMews(reset = true){ //<-- default parameter is true
 	.then(response => response.json())//<-- parsed the json response
 	.then(results => {	//<-- resolved parsed array of objects data being passed here //we could destructure this results...nah
 		console.log(results);
-		
 		results.listOfRequestedMeows.forEach(meow =>{ //<--create element for each meow
 			//createElement doesn't pop up on the page it just creates them. you need to append it to show.
 			
