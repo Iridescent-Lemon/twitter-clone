@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8'>
+		<title>Meower - Twitter for Cats 🐱</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header>
+		<h1 class="title">Meower - Twitter for Cats 🐱</h1>
+		</header>
+		
+		<form class="mew-form" action="/v2/meow" method="POST">
+			<label for="name">Name</label>
+			<input class="u-full-width" type="text" name="name" id="name"/>
+			<label for="content">Meow</label>
+			<textarea class="u-full-width" type="text" name="content" id="content"></textarea>
+			<button type="submit" class="button-primary">Send your Meow</button>
+		</form>
+		
+		<div class="loading">
+			<img src="https://raw.githubusercontent.com/CodingGarden/meower/master/client/loading.gif">
+		</div>
+		
+		<div class="mews">
+			<!-- all the meows are created here	-->
+		</div>
+		
+		<div class="button-container" style="visibility: hidden">
+			<!-- <button class="button-primary">Load More Meows</button> -->
+			<p id="loadMore">loading...</p>
+		</div>
+		
+		<script src="client.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+ background-color: #f4f4f4;
+}
+
+.error-msg {
+	background-color: #da757578;
+}
+
+
+.title{
+	text-align: center;
+}
+
+.mew-form {
+	width: 50%;
+	margin: 0 auto;
+	
+}
+
+.loading {
+	display: flex;
+	justify-content: center;
+}
+
+
+.mews {
+	width: 80%;
+	margin: 0 25%;
+	justify-content: center;
+	
+}
+
+.mew-style {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	border-radius: 1rem;
+	background-color: #75da9778;
+	margin-bottom : 1em;
+	width: 60%;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	margin: 1em;
+}
